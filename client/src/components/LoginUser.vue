@@ -12,7 +12,7 @@ const password = ref<string>("");
 const isLoginDisabled = computed(() => !username.value || !password.value);
 </script>
 <template>
-  <div class="login flex flex-column row-gap-5">
+  <div class="flex flex-column row-gap-5">
     <InputGroup>
       <InputGroupAddon>
         <i class="pi pi-user"></i>
@@ -35,9 +35,4 @@ const isLoginDisabled = computed(() => !username.value || !password.value);
     <Button label="Submit" :disabled="isLoginDisabled" />
   </div>
 </template>
-<style>
-.login {
-  max-width: 600px;
-  margin: 0 auto;
-}
-</style>
+<style></style>
